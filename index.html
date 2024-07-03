@@ -5,9 +5,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RevoU Fundamental Course</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+
+    <header>
+        <span class="logo">Z</span>
+        <nav class="navbar">
+            <section class="navbar-menu" id="navbar-menu">
+                <ul class="navbar-links">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Our Profile</a></li>
+                    <li><a href="">Achivement</a></li>
+                    <li><a href="">Message Us</a></li>
+                </ul>
+            </section>
+            <section class="navbar-toggle" id="navbar-toggle">
+                <i class="ri-menu-line menu-toggle"></i>
+            </section>
+        </nav>
+    </header>
+    <main>
+        <section class="container-banner">
+            <h2 class="banner-headline">Hi Name, Welcome to Website</h2>
+            <div class="banner">
+                <img src="asset/images.jpg" alt="">
+            </div>
+        </section>
+        <section class="container-facilitations">
+            <h2 class="facilitations-headline">Our Facilitations</h2>
+            <div class="facilitations">
+                <div class="facilitations-item">
+                    <div class="facilitations-images">Z</div>
+                    <p class="facilitations-text">Teacher</p>
+                </div>
+                <div class="facilitations-item">
+                    <div class="facilitations-images">Z</div>
+                    <p class="facilitations-text">Sport Field</p>
+                </div>
+                <div class="facilitations-item">
+                    <div class="facilitations-images">Z</div>
+                    <p class="facilitations-text">Classroom</p>
+                </div>
+            </div>
+        </section>
+        <section class="container-forms">
+            <h2 class="facilitations-headline">Messages Us</h2>
+            <section class="form-content">
+                <div class="forms-input">
+                    <form id="form" method="post">
+                        <label for="nama">Fullname : </label>
+                        <input type="text" id="name" name="nama">
+                        <br>
+                        <label for="date">Date : </label>
+                        <input type="date" id="date" name="date">
+                        <br>
+                        <label for="gender">Gender : </label>
+                        <select id="gender" name="gender">
+                            <option value="Male">Laki-laki</option>
+                            <option value="Female">Perempuan</option>
+                        </select>
+                        <br>
+                        <label for="message">Message : </label>
+                        <textarea id="message" name="message" rows="5" cols="30"></textarea>
+                        <br>
+                        <button type="submit">submit</button>
+                    </form>
+                </div>
+                <div class="forms-output">
+                    <table class="container-output">
+                        <tr>
+                            <td>Name </td>
+                            <td>: </td>
+                            <td>
+                                <span id="output-name"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Date </td>
+                            <td>: </td>
+                            <td>
+                                <span id="output-date"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gender </td>
+                            <td>: </td>
+                            <td>
+                                <span id="output-gender"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Message </td>
+                            <td>:</td>
+                            <td>
+                                <span id="output-message"></span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p class="footer-text">Created By Zulvaaraf</p>
+    </footer>
 
     <script src="js/main.js"></script>
 </body>
